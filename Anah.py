@@ -1,9 +1,9 @@
 
-Umur= 18 #int
-tinggibadan = 147,8 #float
-perempuan = True #boolean
-nama = "anah" #string
-huruf = 'a' #char
+# Umur= 18 #int
+# tinggibadan = 147,8 #float
+# perempuan = True #boolean
+# nama = "anah" #string
+# huruf = 'a' #char
 
 # char seharusnya pake tanda petik 1
 
@@ -15,7 +15,8 @@ huruf = 'a' #char
 # dan jika tidak semua itu maka print di layar "aku kecil dan aku masih bahagia"
 # """
 
-umur = 50
+umur = int(input("Masukan Umur :  "))
+
 if umur > 50 :
     print("tua woy")
 elif umur > 17 and umur < 50 :
