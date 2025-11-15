@@ -2,13 +2,13 @@
 
 # # Aturan Membuat variabel
 
-
+x = "halo"
 # penamaan yang jelas
 
 p1 = 10
 p2 = 50
-panjang1 = 10
-panjang2 = 50
+panjang_satu = 10
+panjang_dua = 50
 
 # memiliki nama deskriptif
 bilangan_pertama = 1 
@@ -19,8 +19,8 @@ bilanganPertama = 10
 # for = 11 
 
 # case sensitive
-# angka = 10
-# Angka = 5
+angka = 10
+Angka = 5
 
 # print(angka)
 # print(Angka)
@@ -40,7 +40,7 @@ a,b,c = 1,2,3
 # print(p1)
 
 # mengubah isi variabel
-
+# print(p1)
 # p1 = 40
 # print(p1)
 

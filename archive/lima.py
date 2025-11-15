@@ -1,10 +1,13 @@
 # Mendalami String
 
-# multiline string
-
 # string special character
+# \\ \n \t
+
 
 # penggabungan string
 
-# method string
+# string formatting
 
+
+
+# method string
