@@ -1,3 +1,5 @@
+import csv
+from prettytable import PrettyTable
 # =====================================================================
 #  FILE HANDLING (MEMBACA & MENULIS FILE)
 # =====================================================================
@@ -19,17 +21,20 @@
 # ---------------------------------------------------------
 # 1. Membuka file:
 #       f = open("nama.txt", "mode")
+# f = open("belajar\\data.txt", "a")
 #
 # 2. Membaca file:
 #       f.read()       → membaca semua isi file
 #       f.readline()   → membaca 1 baris
 #       f.readlines()  → membaca semua baris menjadi list
+# f.write("darurat \n")
 #
 # 3. Menulis file:
 #       f.write("teks")
 #
 # 4. Menutup file:
 #       f.close()
+# f.close()
 # ---------------------------------------------------------
 #
 #
@@ -41,6 +46,19 @@
 #       isi = f.read()
 #
 # Karena otomatis menutup file tanpa perlu f.close()
+# try:
+#     with open("belajar\\data.txt", "r") as f:
+#         isi = f.readlines()
+#         jumlah = 0
+#         for line in isi:
+#             jumlah += int(line)
+#         print(jumlah)
+# except ValueError:
+#     print("File mengandung data non-angka!")
+# except FileNotFoundError:
+#     print("File tidak ditemukan!")
+
+
 #
 #
 # JENIS HASIL YANG DIBACA:
@@ -69,6 +87,13 @@
 # KHUSUS FILE CSV (tabel data):
 #   csv.writer()            → menulis baris
 #   csv.reader()            → membaca baris
+table = PrettyTable()
+table.field_names = ["nama_depan", "nama_belakang", "Umur"]
+with open("belajar\\data.csv", "r") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        table.add_row([row["nama_depan"], row["nama_belakang"], row["usia"]])
+print(table)
 #
 #
 # File handling sangat penting untuk:
