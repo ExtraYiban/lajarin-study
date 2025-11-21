@@ -1,8 +1,11 @@
 from auth import login
-role = login()
-if role == "admin":
-    print("kamu admin")
-elif role == "staff":
-    print("kamu staff")
-else:
-    print("bukan siapa siapa")
+while True:
+    role = login()
+    if role == "admin":
+        print("kamu admin")
+        break
+    elif role == "staff":
+        print("kamu staff")
+        break
+    else:
+        print("bukan siapa siapa")
